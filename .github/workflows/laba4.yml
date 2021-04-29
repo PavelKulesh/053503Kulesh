@@ -1,9 +1,9 @@
-name: forLaba3
+name: forLaba4
 on:
   push:
-    branches: [ Lab3 ]
+    branches: [ Lab4 ]
   pull_request:
-    branches: [ Lab3 ]
+    branches: [ Lab4 ]
 jobs: 
   testing:
     runs-on: ubuntu-latest
@@ -16,18 +16,16 @@ jobs:
             sudo apt install splint
     - name: compiling and test
       run: |
-            cd LABA3
-            make main 
-            make tests 
-            make run_tests 
+            cd 4laba 1ind
+            make 
             cd ..
               
     - name: check code with valgrind
       run: |
-            cd LABA3
-            make valgrind_check
-            cd ..
+            cd 4laba 1ind
+            echo "great(h)" > i.txt
+            valgrind ./program << i.txt 
     - name: check code with slint
       run: |
-            cd LABA3
-            make linter_check
+            cd 4laba 1ind
+            splint 4_1.c
