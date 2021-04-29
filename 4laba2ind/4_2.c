@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <windows.h>
 
 int checkfileopen(FILE *myfile)
 {
@@ -123,6 +122,5 @@ int main()
 			temp = 0;
 		}
 	}
-	system("pause");
 	return 0;
 }
