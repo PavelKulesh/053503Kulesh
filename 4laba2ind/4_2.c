@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int checkfileopen(FILE *myfile)
 {
@@ -34,8 +35,6 @@ int checkempty(char *str)
 
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
 	int j = 0, temp = 0, i, q, f;
 	char slovo[100]="";
 	char str[100]="";
