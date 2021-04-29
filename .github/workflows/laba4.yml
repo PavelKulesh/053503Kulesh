@@ -51,4 +51,4 @@ jobs:
     - name: check code with slint
       run: |
             cd 4laba2ind
-            splint 4_2.c
+            splint   -predboolothers -retvalother -exportlocal -boolops -retvalint 4_2.c
