@@ -23,7 +23,7 @@ jobs:
     - name: check code with valgrind
       run: |
             cd 4laba1ind
-            echo "G(new)reat(h)aa" > i.txt
+            echo "G(new)reat(h)aa" >> i.txt
             valgrind ./program << i.txt 
     - name: check code with slint
       run: |
