@@ -28,4 +28,4 @@ jobs:
     - name: check code with slint
       run: |
             cd 4laba1ind
-            splint  -predboolothers -retvalother -exportlocal 4_1.c
+            splint  -predboolothers -retvalother -exportlocal -boolops 4_1.c
