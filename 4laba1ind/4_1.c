@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <windows.h>
 
 int checkinput(char *input)
 {
@@ -86,6 +85,5 @@ int main()
 		}
 	}
 	printf("%s", output);
-	system("pause");
 	return 0;
 }
