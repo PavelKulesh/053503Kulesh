@@ -1,3 +1,3 @@
 all: 
-	gcc 4_1.c
-	gcc 4_1_test.c
+	gcc -o program 4_1.c
+	gcc -o test 4_1_test.c
