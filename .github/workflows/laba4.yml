@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ Lab4 ]
 jobs: 
-  testing:
+  task1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -29,3 +29,26 @@ jobs:
       run: |
             cd 4laba1ind
             splint  -predboolothers -retvalother -exportlocal -boolops 4_1.c
+  task2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: install valgrind and splint
+      run: |
+            sudo apt install valgrind
+            sudo apt install splint
+    - name: compiling and test
+      run: |
+            cd 4laba2ind
+            make 
+            cd ..
+              
+    - name: check code with valgrind
+      run: |
+            cd 4laba2ind
+            valgrind ./program 
+    - name: check code with slint
+      run: |
+            cd 4laba2ind
+            splint 4_2.c
