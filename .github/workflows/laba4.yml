@@ -16,16 +16,16 @@ jobs:
             sudo apt install splint
     - name: compiling and test
       run: |
-            cd 4laba 1ind
+            cd 4laba1ind
             make 
             cd ..
               
     - name: check code with valgrind
       run: |
-            cd 4laba 1ind
+            cd 4laba1ind
             echo "great(h)" > i.txt
             valgrind ./program << i.txt 
     - name: check code with slint
       run: |
-            cd 4laba 1ind
+            cd 4laba1ind
             splint 4_1.c
