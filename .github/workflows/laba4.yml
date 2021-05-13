@@ -71,3 +71,28 @@ jobs:
       run: |
             cd 5laba
             splint
+
+task4:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: install valgrind and splint
+      run: |
+            sudo apt install valgrind
+            sudo apt install splint
+    - name: compiling and test
+      run: |
+            cd 6laba
+            make 
+            cd ..
+              
+    - name: check code with valgrind
+      run: |
+            cd 6laba
+            echo "123 43 654 12 435" > input.txt
+            valgrind ./program < input.txt 
+    - name: check code with slint
+      run: |
+            cd 6laba
+            splint
