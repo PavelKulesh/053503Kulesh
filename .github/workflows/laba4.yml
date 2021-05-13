@@ -67,10 +67,7 @@ jobs:
             make 
             cd ..
               
-    - name: check code with valgrind
-      run: |
-            cd 5laba
-            valgrind ./program 
+
     - name: check code with slint
       run: |
             cd 5laba
