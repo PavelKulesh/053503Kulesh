@@ -74,5 +74,4 @@ jobs:
     - name: check code with slint
       run: |
             cd 5laba
-            splint   -predboolothers -retvalother -exportlocal -boolops -retvalint -nullpass  +matchanyintegral 4_2.c
-  
+            splint
