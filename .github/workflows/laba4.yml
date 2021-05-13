@@ -72,7 +72,7 @@ jobs:
             cd 5laba
             splint
 
-task4:
+  task4:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
