@@ -67,7 +67,6 @@ jobs:
             make 
             cd ..
               
-
     - name: check code with slint
       run: |
             cd 5laba
