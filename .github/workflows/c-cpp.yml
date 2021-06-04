@@ -23,6 +23,6 @@ jobs:
     - name: Upload
       uses: codecov/codecov-action@v1
       with: 
-          token: ${{ secrets.CODECOV_TOKEN }} 8e5ed01f-321c-4841-8af8-1d43f5732266
+          token: ${{ secrets.CODECOV_TOKEN }} 1dfc15da-303b-4d90-a89f-05778cb21bd2
           files: |
             7laba/DataJoke.cpp.gcov
