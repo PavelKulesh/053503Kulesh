@@ -15,7 +15,7 @@ int PrintMenu()
 				"4. eXIt\n";
 		int digit;
 		cin >> digit;
-		if (digit > 8 || digit < 1)
+		if (digit > 4 || digit < 1)
 		{
 			cout << "\nTry again\n";
 		}
