@@ -1,0 +1,28 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: install valgrind and splint
+      run: 
+         sudo apt install valgrind
+         sudo apt splint
+    - uses: actions/checkout@v2
+    - name: Make
+      run: 
+        make -C 7laba/ 
+    - name: Upload
+      uses: codecov/codecov-action@v1
+      with: 
+          token: ${{ secrets.CODECOV_TOKEN }} 8e5ed01f-321c-4841-8af8-1d43f5732266
+          files: |
+            7laba/DataJoke.cpp.gcov
